@@ -7,8 +7,8 @@ public class longestLine {
         int n1 = sc.nextInt();
         int n2 = sc.nextInt();
 
-        int[] arr1 = new int[100];
-        int[] arr2 = new int[100];
+        int[] arr1 = new int[n1];
+        int[] arr2 = new int[n2];
 
         for(int i = 0 ; i < n1 ; i++){
             arr1[i] = sc.nextInt();
@@ -20,11 +20,21 @@ public class longestLine {
 
         if(n1>n2){
             int s = 0;
-            int e = arr1.length;
+            int e = arr1.length-1;
 
             int mid = s+(e-s)/2;
 
             System.out.println(arr1[mid]);
+        }
+
+        else{
+            int s = 0 ; 
+            int e = arr2.length-1;
+
+            int mid = s+(e-s)/2;
+
+            System.out.println(arr2[mid]);
+
         }
 
     }
