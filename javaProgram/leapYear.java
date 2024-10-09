@@ -8,14 +8,14 @@ public class leapYear{
 		
 		int year = sc.nextInt();
 		
-		if(((year%400 == 0) && (year%4==0)) || (year%100 != 0)){
+		if((year % 400 == 0) || (year % 100!= 0) && (year % 4 == 0)){
 				
-				System.out.print("leap year");
-}
+			System.out.print("leap year");
+		}
 
 		else{
 			System.out.print("no");
-}
+		}
 		
 
 
